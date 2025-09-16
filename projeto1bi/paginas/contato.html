@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+  <header>
+    <h1>Contato</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="filmes.html">Filmes</a></li>
+        <li><a href="series.html">Séries</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Formulário de Contato</h2>
+    <form action="#" method="post">
+      
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome Completo: <input type="text" name="nome" required></label><br>
+        <label>E-mail: <input type="email" name="email" required></label><br>
+        <label>Telefone: <input type="tel" name="telefone"></label><br>
+        <label>Senha: <input type="password" name="senha"></label><br>
+        <label>Data de Nascimento: <input type="date" name="data_nascimento"></label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferências de Filmes e Séries</legend>
+        <label>Gênero favorito:
+          <select name="genero">
+            <option>Ação</option>
+            <option>Comédia</option>
+            <option>Terror</option>
+            <option>Romance</option>
+            <option>Ficção Científica</option>
+          </select>
+        </label><br>
+
+        <p>Plataforma favorita:</p>
+        <label><input type="radio" name="plataforma" value="Netflix"> Netflix</label><br>
+        <label><input type="radio" name="plataforma" value="Prime Video"> Prime Video</label><br>
+        <label><input type="radio" name="plataforma" value="Disney+"> Disney+</label><br>
+        <label><input type="radio" name="plataforma" value="Outro"> Outro</label><br>
+
+        <p>Interesses:</p>
+        <label><input type="checkbox" name="interesse1"> Lançamentos</label><br>
+        <label><input type="checkbox" name="interesse2"> Bastidores</label><br>
+        <label><input type="checkbox" name="interesse3"> Críticas</label><br>
+        <label><input type="checkbox" name="interesse4"> Entrevistas</label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Opinião</legend>
+        <label>Filme favorito: <input type="text" name="filme_favorito"></label><br>
+        <label>Série favorita: <input type="text" name="serie_favorita"></label><br>
+        <label>Nota para nosso portal: <input type="number" name="nota" min="0" max="10"></label><br>
+        <label>Deixe sua mensagem:</label><br>
+        <textarea name="mensagem" rows="4" cols="40"></textarea><br>
+        <label>Cor favorita do site: <input type="color" name="cor"></label><br>
+        <label>Upload de imagem (opcional): <input type="file" name="upload"></label><br>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <footer>
+    <div>
+      <p>&copy; 2025 Portal de Filmes e Séries</p>
+      <p>Todos os direitos reservados</p>
+    </div>
+    <div>
+      <a href="#">Instagram</a> 
+      <a href="#">Letterboxd</a> 
+      <a href="#">X</a> 
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+</body>
+</html>
