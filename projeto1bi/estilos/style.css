@@ -169,7 +169,13 @@ figcaption {
     margin-top: 10px;
     font-size: 1em;
 }
-
+.serie-lista ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -213,9 +219,15 @@ figcaption {
 form label {
     display: block;
     margin-bottom: 10px;
+    padding:10px ;
     font-weight: 600;
 }
-
+fieldset p { 
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
